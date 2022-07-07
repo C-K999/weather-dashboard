@@ -25,24 +25,26 @@
             <aside class="col-md-4 border rounded">
                 <p class="row">Search for a city</p>
                 <span class="row mb-3">
-                        <input type="text" class="rounded"placeholder="Enter city name"></input>
+                        <input type="text" class="rounded"placeholder="Enter city name" id="city-search"></input>
                         <div><button class="rounded bg-primary text-white"id="search-button">
                             <i class="fas fa-search"></i>
                         </button></div>
                 </span>
                 <button class="row bg-primary text-white rounded" id="clear-history">Clear History</button>
-                <button class="row rounded"id="history"></button>
+                <li class="row rounded"id="history"></li>
             </aside>
 
             <!-- Results-->
             <span class="row col-md-6">
-                <h4>City name</h4>
+                <h4 id="city-name"></h4>
                 <br>
                 <aside class="container border rounded">
                     <li class="row display-text" id="temperature"></li>
-                    <li class="row display-text" id="humidity"></li>
                     <li class="row display-text" id="wind-speed"></li>
-                    <li class="row display-text" id="uv-index"></li>
+                    <li class="row display-text" id="humidity"></li>
+                    <li class="row display-text" id="uv-index">
+                        <button class="text-white rounded" id="alert"></button>
+                    </li>
                 </aside>
                 <header>
                     <h4>5-Day Forecast</h4>
@@ -59,5 +61,7 @@
         </div>
     </main>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
