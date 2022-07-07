@@ -9,30 +9,52 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets\reset.css"/>
     <link rel="stylesheet" href="assets\style.css"/>
 </head>
 
 <body>
     <header>
-        <h1 class="w-100 text-center">Weather Dashboard</h1>
+        <h1 class="w-100 text-center border">Weather Dashboard</h1>
     </header>
 
     <main class="container">
         <div class="row">
 
-            <!--Search box-->>
-            <aside>
-                <p>Search for a city</p>
+            <!--Search box-->
+            <aside class="col-md-4 border rounded">
+                <p class="row">Search for a city</p>
                 <span class="row mb-3">
-                        <input type="text"placeholder="Enter city name"></input>
-                        <div><button id="search-button">
+                        <input type="text" class="rounded"placeholder="Enter city name"></input>
+                        <div><button class="rounded bg-primary text-white"id="search-button">
                             <i class="fas fa-search"></i>
                         </button></div>
-            </span>
-                <button id="clear-history">Clear History</button>
+                </span>
+                <button class="row bg-primary text-white rounded" id="clear-history">Clear History</button>
+                <button class="row rounded"id="history"></button>
             </aside>
 
-            
+            <!-- Results-->
+            <span class="row col-md-6">
+                <h4>City name</h4>
+                <br>
+                <aside class="container border rounded">
+                    <li class="row display-text" id="temperature"></li>
+                    <li class="row display-text" id="humidity"></li>
+                    <li class="row display-text" id="wind-speed"></li>
+                    <li class="row display-text" id="uv-index"></li>
+                </aside>
+                <header>
+                    <h4>5-Day Forecast</h4>
+                </header>
+                <span class="row">
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                </span>
+            </span>
 
         </div>
     </main>
