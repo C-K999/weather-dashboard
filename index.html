@@ -22,7 +22,7 @@
         <div class="row">
 
             <!--Search box-->
-            <aside class="col-md-4 border rounded">
+            <aside class="panels col-md-4 border rounded">
                 <p class="row">Search for a city</p>
                 <span class="row mb-3">
                         <input type="text" class="rounded"placeholder="Enter city name" id="city-search"></input>
@@ -35,21 +35,19 @@
             </aside>
 
             <!-- Results-->
-            <span class="row col-md-6">
+            <span class="row col-md-6 panels">
                 <h4 id="city-name"></h4>
                 <br>
                 <aside class="container border rounded">
                     <li class="row display-text" id="temperature"></li>
                     <li class="row display-text" id="wind-speed"></li>
                     <li class="row display-text" id="humidity"></li>
-                    <li class="row display-text" id="uv-index">
-                        <button class="text-white rounded" id="alert"></button>
-                    </li>
+                    <li class="row display-text" id="uv-index"></li>            </li>
                 </aside>
                 <header>
                     <h4>5-Day Forecast</h4>
                 </header>
-                <span class="row">
+                <span class="row"id="5-day">
                     <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
                     <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
                     <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>

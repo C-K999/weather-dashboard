@@ -1,15 +1,25 @@
 h1{
     margin-top: 0;
+    color:white;
+    background-color: grey;
 }
 
 .row{
     margin: 20px;
 }
 
+.panels{
+    background-color: rgb(208, 208, 208);
+}
+
 .alert{
     background-color: red;
+    margin:2px;
+    color:white;
 }
 
 .safe{
     background-color: lightgreen;
+    margin:2px;
+    color:white;
 }

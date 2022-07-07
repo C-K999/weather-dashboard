@@ -27,7 +27,6 @@ function cityValue(citySearch){
     })
     .then(function (data) {
       // Variables for latitude longitude
-      console.log(data);
       var getLat = data[0].lat;
       var getLon = data[0].lon;
       
@@ -54,12 +53,18 @@ function cityValue(citySearch){
         currentWet.textContent = "Humidity: "+getWet+"%";
 
         var getBurnt = data2.current.uvi;
-        var alertUV = document.querySelector("#alert");
+        console.log(getBurnt);
+        var alertUV = document.createElement("span");
         alertUV.textContent = getBurnt;
+        currentUV.append(alertUV);
         if(getBurnt>2){
-            alertUV.setAttribute("class","text danger");
+            alertUV.setAttribute("class","danger");
         }else{
-            alertUV.setAttribute("class","text safe");
+            alertUV.setAttribute("class","safe");
+        }
+
+        for(var i=0;i<5;i++){
+            
         }
 
       })
