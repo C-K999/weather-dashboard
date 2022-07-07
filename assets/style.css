@@ -5,14 +5,19 @@ h1{
 }
 
 .row{
-    margin: 20px;
+    margin: 5px;
 }
 
-.panels{
+.search-panels{
     background-color: rgb(208, 208, 208);
 }
 
-.alert{
+.results-panels{
+    background-color: rgb(208, 208, 208);
+    margin-right: 50px;
+}
+
+.danger{
     background-color: red;
     margin:2px;
     color:white;

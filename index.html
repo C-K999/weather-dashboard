@@ -19,10 +19,10 @@
     </header>
 
     <main class="container">
-        <div class="row">
+        <div class="passage row">
 
             <!--Search box-->
-            <aside class="panels col-md-4 border rounded">
+            <aside class="search-panels col-md-4 border rounded">
                 <p class="row">Search for a city</p>
                 <span class="row mb-3">
                         <input type="text" class="rounded"placeholder="Enter city name" id="city-search"></input>
@@ -31,11 +31,11 @@
                         </button></div>
                 </span>
                 <button class="row bg-primary text-white rounded" id="clear-history">Clear History</button>
-                <li class="row rounded"id="history"></li>
+                <form class="row"id="history"></form>
             </aside>
 
             <!-- Results-->
-            <span class="row col-md-6 panels">
+            <span class="row col-md-7 results-panels rounded">
                 <h4 id="city-name"></h4>
                 <br>
                 <aside class="container border rounded">
@@ -47,13 +47,7 @@
                 <header>
                     <h4>5-Day Forecast</h4>
                 </header>
-                <span class="row"id="5-day">
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                </span>
+                <span class="row shrink"id="5-day"></span>
             </span>
 
         </div>
