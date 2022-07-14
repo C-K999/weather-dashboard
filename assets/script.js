@@ -66,7 +66,7 @@ function cityValue(citySearch){
       var getLat = data[0].lat;
       var getLon = data[0].lon;
       
-      fetch("http://api.openweathermap.org/data/3.0/onecall?lat="
+      fetch("https://api.openweathermap.org/data/3.0/onecall?lat="
       +getLat+"&lon="+getLon+"&units=imperial&appid="+APIKeyW)
       .then(function(response2){
         return response2.json();
@@ -118,7 +118,7 @@ function cityValue(citySearch){
     
                 if(i>1){var imageW = document.createElement("img");}
                 var iconW = data2.daily[i].weather[0].icon;
-                imageW.setAttribute("src","http://openweathermap.org/img/wn/"+iconW+"@2x.png");
+                imageW.setAttribute("src","https://openweathermap.org/img/wn/"+iconW+"@2x.png");
                 day.append(imageW);
                 
                 var thisTemp = (data2.daily[i].temp.max+data2.daily[i].temp.min)/2;
