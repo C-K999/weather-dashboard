@@ -56,7 +56,7 @@ searchClear.addEventListener("click",function() {
 // API functions
 // Function to fetch the geolocation 
 function cityValue(citySearch){
-    fetch("http://api.openweathermap.org/geo/1.0/direct?q="
+    fetch("https://api.openweathermap.org/geo/1.0/direct?q="
     +citySearch+"&units=imperial&appid="+APIKeyW)
     .then(function(response){
         return response.json();
